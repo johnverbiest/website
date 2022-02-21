@@ -16,18 +16,20 @@
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
           <aside class="footer-rt">
-            <div class="sitemap pull-left">
-              <ul>
-                <li><i class="fa fa-stop"></i> <a href="index.html">Home</a></li>
-                <li><i class="fa fa-stop"></i> <a href="portfolio.html">Portfolio</a></li>
-              </ul>
-            </div>
-            <div class="sitemap pull-left">
-              <ul>
-                <li><i class="fa fa-stop"></i> <a href="http://support.johnverbiest.be">Support</a></li>
-                <li><i class="fa fa-stop"></i> <a href="contact.html">Contact</a></li>
-              </ul>
-            </div>
+
+
+
+<div class="sitemap pull-left"><ul>
+{% assign sortedPages = site.pages | sort: "menu-order"  %}
+{% for linkpage in sortedPages %}
+    {% assign loopindex = forloop.index | modulo: 2 %}
+        <li><i class="fa fa-stop"></i> <a href="{{ linkpage.permalink }}">{{ linkpage.title }}</a></li>
+        {% if loopindex == 1 %}
+            </ul></div><div class="sitemap pull-left"><ul>
+        {% endif %}
+    </li>
+{% endfor %}
+</div>
             <div class="copyright-area pull-right">
               <div class="logo pull-left"><a href="index.html"><img src="assets/johnverbiest_be/images/footer-logo.png" alt="logo" /></a></div>
               <div class="clearfix"></div>
