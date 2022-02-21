@@ -13,8 +13,8 @@ permalink: /contact
       <h3>Contact</h3>
       <ul>
        <li><i class="fa fa-map-marker ping"></i> Oude leielaan<br>8930 Menen</li>
-<li><i class="fa fa-phone"></i> +32 474 87 64 33</li>
-<li><i class="fa fa-envelope"></i> <a href="mailto:support@johnverbiest.be">support@johnverbiest.be</a></li>
+       <li><i class="fa fa-phone"></i> +32 474 87 64 33</li>
+       <li><i class="fa fa-envelope"></i> <a href="mailto:support@johnverbiest.be">support@johnverbiest.be</a></li>
       </ul>
      </aside> 
     </div>
