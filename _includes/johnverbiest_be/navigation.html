@@ -16,6 +16,7 @@
 {% assign sortedPages = site.pages | sort: "menu-order"  %}
 {% for linkpage in sortedPages %}
     <li>
+        <!-- if {{ linkpage.permalink }} == {{ page.permalink }} ({{ linkpage.title }}) -->
         <a 
             href="{{ linkpage.permalink }}"
             {% if page.permalink == linkpage.permalink %}
