@@ -14,7 +14,7 @@
                     <ul class="nav navbar-nav">
 
 
-{% for page in site.pages %}
+{% for page in site.pages | sort: menu-order %}
     <li><a href="{{ page.permalink }}">{{ page.title }}</a></li>
 {% endfor %}
 

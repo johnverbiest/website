@@ -2,6 +2,7 @@
 layout: johnverbiest_be-default
 title: Contact
 banner: contact-banner
+menu-order: 20
 permalink: /contact
 ---
 
