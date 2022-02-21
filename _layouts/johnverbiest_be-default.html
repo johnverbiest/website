@@ -8,7 +8,7 @@ layout: compress
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>John Verbiest .be - Software Solutions</title>
+<title>{{ site.title }} | {{ page.title }}</title>
 <link rel="icon" href="assets/johnverbiest_be/images/favicon.png" type="image/png">
 <link rel="stylesheet" href="assets/johnverbiest_be/css/all-stylesheets.css" type="text/css" />
 <!--[if lt IE 9]>
@@ -24,51 +24,11 @@ layout: compress
   <!--page-loader-wrapper-1--> 
 </div>
 
-<!--====================================--> 
-<!--============ Navigatie =============--> 
-<!--====================================-->
-<div class="greyBg header-con col-lg-12 col-md-12 col-sm-12 col-xs-12">
-  <div class="container">
-    <div class="row">
-      <aside class="header col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <div class="logo pull-left"><a href="index.html"><img src="assets/johnverbiest_be/images/logo.png" alt="logo" /></a></div>
-        <nav class="navbar navbar-default pull-right">
-          <div class="container-fluid">
-            <div class="row"> 
-              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <div class="row">
-                  <ul class="nav navbar-nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="active"><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="http://support.johnverbiest.be">Support</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </aside>
-    </div>
-  </div>
-</div>
 
 
-<!--=====================================--> 
-<!--============== Banner ===============--> 
-<!--=====================================-->
-<div class="sub-banner-con work-banner col-lg-12 col-md-12 col-sm-12 col-xs-12">
-  <div class="container">
-    <div class="row">
-      <aside class="sub-banner text-center">
-        <ol class="breadcrumb">
-          <li class="active"></li>
-        </ol>
-        <h1>Portfolio</h1>
-      </aside>
-    </div>
-  </div>
-</div>
+{% include navigation.html %}
+
+{% include banner.html %}
 
 <!--===========================--> 
 <!--========= CONTENT =========--> 
@@ -89,52 +49,9 @@ layout: compress
   </div>
 
 
-<!--=========================--> 
-<!--========= Footer =========--> 
-<!--==========================-->
-<div class="black-bg col-lg-12 col-md-12 col-sm-12 col-xs-12">
-  <div class="container">
-    <footer class="footer col-lg-12 col-md-12 col-sm-12 col-xs-12">
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <aside class="footer-lt">
-          <ul>
-            <li><i class="fa fa-phone"></i>+32 474 87 64 33 </li>
-            <li><i class="fa fa-map-marker ping"></i> Kampstraat 37<br>
-             8500 KORTRIJK</li>
-            <li><i class="fa fa-envelope"></i> <a href="mailto:john@johnverbiest.be">john@johnverbiest.be</a></li>
-          </ul>
-        </aside>
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <aside class="footer-rt">
-          <div class="sitemap pull-left">
-            <ul>
-              <li><i class="fa fa-stop"></i> <a href="index.html">Home</a></li>
-              <li><i class="fa fa-stop"></i> <a href="portfolio.html">Portfolio</a></li>
-            </ul>
-          </div>
-          <div class="sitemap pull-left">
-            <ul>
-              <li><i class="fa fa-stop"></i> <a href="http://support.johnverbiest.be">Support</a></li>
-              <li><i class="fa fa-stop"></i> <a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
-          <div class="copyright-area pull-right">
-            <div class="logo pull-left"><a href="index.html"><img src="assets/johnverbiest_be/images/footer-logo.png" alt="logo" /></a></div>
-            <div class="clearfix"></div>
-          </div>
-        </aside>
-      </div>
-    </footer>
-  </div>
-</div>
+{% include footer.html %}
 
+{% include default_js.html %}
 
-<script src="assets/johnverbiest_be/js/jquery-1.12.3.min.js"></script> 
-<script src="assets/johnverbiest_be/js/bootstrap/bootstrap.js"></script> 
-<script type="text/javascript" src="assets/johnverbiest_be/js/jquery.unveilEffects.js"></script> 
-<script src="assets/johnverbiest_be/js/lightbox/lightbox.js"></script> 
-<script src="assets/johnverbiest_be/js/projects/isotope.js"></script> 
-<script src="assets/johnverbiest_be/js/custom.js"></script> 
 </body>
 </html>

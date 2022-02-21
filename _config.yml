@@ -21,3 +21,7 @@ baseurl: /
 
 # Default Markdown Engine
 markdown: kramdown
+
+# Site configs
+title: johnverbiest.be Software Solutions
+default-banner: work-banner
