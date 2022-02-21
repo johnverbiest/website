@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: johnverbiest_be-default
 permalink: /
 ---
 
