@@ -1,7 +1,7 @@
 ---
 layout: johnverbiest_be-default
-title: johnverbiest.be
-banner: contact-banner
+title: Home
+banner: data-banner
 permalink: /
 ---
 
