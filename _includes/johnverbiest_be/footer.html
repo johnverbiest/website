@@ -22,11 +22,13 @@
 <div class="sitemap pull-left"><ul>
 {% assign sortedPages = site.pages | sort: "menu-order"  %}
 {% for linkpage in sortedPages %}
+{% if linkpage.permalink %}
     {% assign loopindex = forloop.index | modulo: 2 %}
         <li><i class="fa fa-stop"></i> <a href="{{ linkpage.permalink }}">{{ linkpage.title }}</a></li>
         {% if loopindex == 1 %}
             </ul></div><div class="sitemap pull-left"><ul>
         {% endif %}
+{% endif %}
 {% endfor %}
 </ul></div>
 
