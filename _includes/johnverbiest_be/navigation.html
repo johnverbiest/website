@@ -13,7 +13,7 @@
                   <div class="row">
                     <ul class="nav navbar-nav">
 
-{% assign sortedPages = site.pages | sort: menu-order  %}
+{% assign sortedPages = site.pages | sort: "menu-order"  %}
 {% for page in sortedPages %}
     <li><a href="{{ page.permalink }}">{{ page.title }}</a></li>
 {% endfor %}
