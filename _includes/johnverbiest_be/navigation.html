@@ -14,15 +14,19 @@
                     <ul class="nav navbar-nav">
 
 {% assign sortedPages = site.pages | sort: "menu-order"  %}
-{% for page in sortedPages %}
-    <li><a href="{{ page.permalink }}">{{ page.title }}</a></li>
+{% for linkpage in sortedPages %}
+    <li>
+        <a 
+            href="{{ linkpage.permalink }}"
+            {% if page.permalink == linkpage.permalink %}
+            class="active"
+            {% endif %}
+            >
+            {{ linkpage.title }}
+        </a>
+    </li>
 {% endfor %}
 
-
-                      <li><a href="index.html">Home</a></li>
-                      <li class="active"><a href="portfolio.html">Portfolio</a></li>
-                      <li><a href="http://support.johnverbiest.be">Support</a></li>
-                      <li><a href="contact.html">Contact</a></li>
                     </ul>
                   </div>
                 </div>
